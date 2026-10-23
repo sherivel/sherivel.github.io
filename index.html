@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Developer Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0f172a;
+            color: #f8fafc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            width: 100%;
+            border-bottom: 1px solid #334155;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #38bdf8;
+        }
+        p.subtitle {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            margin-top: 10px;
+        }
+        .container {
+            max-width: 800px;
+            width: 90%;
+            margin: 40px 0;
+        }
+        h2 {
+            color: #f8fafc;
+            border-bottom: 2px solid #38bdf8;
+            padding-bottom: 5px;
+            display: inline-block;
+        }
+        .project-card {
+            background-color: #1e293b;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #334155;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .project-card h3 {
+            margin-top: 0;
+            color: #fbbf24;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #38bdf8;
+            color: #0f172a;
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background-color: #7dd3fc;
+        }
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Hi, I'm Srihari 👋</h1>
+        <p class="subtitle">Student and Coder | Building Cool Software</p>
+    </header>
+
+    <div class="container">
+        <h2>🛠️ About Me</h2>
+        <p>Welcome to my portfolio! I am a passionate newbie developer who loves trying new code and creating useful tools. Scroll down to see what I've built!</p>
+
+        <h2>🚀 Featured Projects</h2>
+
+        <!-- Project 1 -->
+        <div class="project-card">
+            <h3>🌍 Real-Time ISS Tracker</h3>
+            <p>A full-stack Python application that calculates the International Space Station's orbital paths using Skyfield mathematics and renders a live tracking route on an interactive Folium map.</p>
+            <a href="https://github.com/sherivel/iss-tracker" class="btn" target="_blank">View Code on GitHub ↗</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <h3>🎥 Universal YouTube Downloader</h3>
+            <p>A desktop application built with Python and Tkinter featuring a customized graphical window. Automatically downloads videos in a universal MP4 format.</p>
+            <a href="https://github.com/sherivel/youtube-video-downloader" class="btn" target="_blank">View Code on GitHub ↗</a>
+        </div>
+
+              <!-- Project 3 (Coming Soon) -->
+        <div class="project-card" style="border-style: dashed; border-color: #475569; background-color: #0f172a;">
+            <h3 style="color: #94a3b8;">✨ And More Coming Soon!</h3>
+            <p style="color: #94a3b8; font-style: italic;">I am constantly coding and exploring new ideas. Some of my previous development projects are currently being reassembled and will be uploaded here very soon alongside new projects!</p>
+            <span style="display: inline-block; color: #64748b; font-size: 0.9rem; font-weight: bold; margin-top: 10px; border: 1px solid #475569; padding: 4px 10px; border-radius: 4px;">🚀 Code Uploading In Progress</span>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Built with HTML & CSS. Hosted via GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
