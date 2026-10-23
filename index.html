@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Developer Portfolio</title>
+    <!-- FontAwesome for Contact & Social Icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -56,6 +58,41 @@
             margin-top: 0;
             color: #fbbf24;
         }
+        /* Style for Contact Grid Layout */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .contact-item {
+            background-color: #1e293b;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .contact-item i {
+            font-size: 1.3rem;
+            color: #38bdf8;
+            width: 24px;
+            text-align: center;
+        }
+        .contact-item a {
+            color: #f8fafc;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .contact-item a:hover {
+            color: #38bdf8;
+        }
+        .contact-item span {
+            color: #f8fafc;
+            font-weight: 500;
+        }
         .btn {
             display: inline-block;
             background-color: #38bdf8;
@@ -70,11 +107,23 @@
         .btn:hover {
             background-color: #7dd3fc;
         }
+        /* Resume button configuration styling color */
+        .btn-resume {
+            background-color: #fbbf24;
+            color: #0f172a;
+            margin-top: 15px;
+        }
+        .btn-resume:hover {
+            background-color: #fcd34d;
+        }
         footer {
             margin-top: auto;
             padding: 20px;
             color: #64748b;
             font-size: 0.9rem;
+            text-align: center;
+            width: 100%;
+            border-top: 1px solid #334155;
         }
     </style>
 </head>
@@ -105,11 +154,48 @@
             <a href="https://github.com/sherivel/youtube-video-downloader" class="btn" target="_blank">View Code on GitHub ↗</a>
         </div>
 
-              <!-- Project 3 (Coming Soon) -->
+        <!-- Project 3 (Coming Soon) -->
         <div class="project-card" style="border-style: dashed; border-color: #475569; background-color: #0f172a;">
-            <h3 style="color: #94a3b8;">✨ And More Coming Soon!</h3>
+            <h3>✨ And More Coming Soon!</h3>
             <p style="color: #94a3b8; font-style: italic;">I am constantly coding and exploring new ideas. Some of my previous development projects are currently being reassembled and will be uploaded here very soon alongside new projects!</p>
             <span style="display: inline-block; color: #64748b; font-size: 0.9rem; font-weight: bold; margin-top: 10px; border: 1px solid #475569; padding: 4px 10px; border-radius: 4px;">🚀 Code Uploading In Progress</span>
+        </div>
+
+        <!-- 📬 Contact Me Section -->
+        <h2 style="margin-top: 40px;">📬 Contact Me</h2>
+        <div class="contact-grid">
+            <!-- LinkedIn -->
+            <div class="contact-item">
+                <i class="fa-brands fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/srihari-shaiju-85860a381" target="_blank">LinkedIn Profile</a>
+            </div>
+            <!-- Instagram -->
+            <div class="contact-item">
+                <i class="fa-brands fa-instagram"></i>
+                <a href="https://www.instagram.com/i_sherivel/" target="_blank">My Personal Instagram</a>
+            </div>
+            <!-- Email ID #1-->
+            <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:25091736d@connect.polyu.hk">25091736d@connect.polyu.hk</a>
+            </div>
+            <!-- Email ID #2-->
+            <div class="contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:sriharishaiju@gmail.com">sriharishaiju@gmail.com</a>
+            </div>
+            <!-- Phone Number -->
+            <div class="contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>+852 90633317</span>
+            </div>
+        </div>
+
+        <!-- 📄 Resume Link Button -->
+        <div style="text-align: center;">
+            <a href="resume.pdf" class="btn btn-resume" target="_blank">
+                <i class="fa-solid fa-file-pdf"></i> View My Full Resume (PDF)
+            </a>
         </div>
 
     </div>
